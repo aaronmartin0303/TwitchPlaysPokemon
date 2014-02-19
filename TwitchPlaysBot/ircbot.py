@@ -17,6 +17,8 @@
 import sys
 import socket
 import string
+import os
+import time
 
 HOST = "irc.twitch.tv"
 PORT = 6667
@@ -32,6 +34,8 @@ readbuffer = ""
 out = ""
 x = 0
 
+os.system("chcp 65001")
+
 s=socket.socket( )
 s.connect((HOST, PORT))
 
@@ -42,7 +46,7 @@ s.send(bytes("JOIN #%s\r\n" % CHAT_CHANNEL, "UTF-8"));
 s.send(bytes("PRIVMSG #%s :Connected\r\n" % CHAT_CHANNEL, "UTF-8"))
 
 while 1:
-    readbuffer = readbuffer+s.recv(1024).decode("UTF-8")
+    readbuffer = readbuffer+s.recv(1024).decode("UTF-8", errors="ignore")
     temp = str.split(readbuffer, "\n")
     readbuffer=temp.pop( )
 
