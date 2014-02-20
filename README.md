@@ -15,13 +15,22 @@ After that install this:
 
 <a href="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/pywin32-218.win32-py3.3.exe/download">Everyone Else</a>
 
-You'll want to download Visual Boy Advance and set .gbc files to open with it by default before running
+You'll want to download <a href="http://coolrom.com/emulators/gba/14/Visual_Boy_Advance.php">Visual Boy Advance</a> and set .gbc files to open with it by default before running this bot
 
-While running this please be aware of encoding issues, run this from COMMAND PROMPT and before running the python bot type in chcp 65001
+Now you're good, download <a href="https://github.com/sunshinekitty5/TwitchPlaysPokemon/archive/master.zip">this</a> and extract it anywhere, don't re-arrange or re-name the contents without changing the scripts, you will also need to update ircbot.py to connect to your account, or else it will NOT work.
 
-Now you're good, download the Master.zip from this page and extract it anywhere, don't re-arrange or re-name the contents without changing the scripts, you will also need to update ircbot.py to connect to your account, or else it will NOT work.
+<h2>How-to run</h2>
 
-My code is not beautiful and could probably be better.  
+<p>Of course update ircbot.py with your credentials first
+
+Open Visual Boy Advance and change your arrow key settings to use num-pad 8, 4, 6, 2 respectively with num-lock enabled, Z and X are A and B, Enter and Backspace are Start and Select.
+
+Open up two COMMAND PROMPTS and before running the programs type in chcp 65001
+
+First start the ircbot, verify that it echos "Connected" to the channel and can receive messages, then start the controller.py which will open VBA as well as focus it every 3 seconds when it needs to make a command.
+
+(To people who don't know command line, navigate to the directory your stuff is located in with cd Directory\Name then type in the name of the program, if you installed Python 3.3.4 correctly it will start the program)
+
 
 <h2>In other news</h2>
 Now I will shamelessly plug my channel <a href="http://www.twitch.tv/nutz1"><b>HERE</b></a>
@@ -32,3 +41,5 @@ So if you must follow a channel, follow the latter.
 
 <h3>Side:</h3>
 If you get this working on a Ubuntu 12.04 server running xvnc please tell me what you're using to stream by sending me a message on Twitch, I'd appreciate it so I can port this to Linux.
+
+My code is not beautiful and could be better.
