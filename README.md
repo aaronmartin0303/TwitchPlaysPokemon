@@ -17,7 +17,7 @@ After that install this:
 
 You'll want to download <a href="http://coolrom.com/emulators/gba/14/Visual_Boy_Advance.php">Visual Boy Advance</a> and set .gbc files to open with it by default before running this bot
 
-Now you're good, download <a href="https://github.com/sunshinekitty5/TwitchPlaysPokemon/archive/master.zip">this</a> and extract it anywhere, don't re-arrange or re-name the contents without changing the scripts, you will also need to update ircbot.py to connect to your account, or else it will NOT work.
+Now you're good, download <a href="https://github.com/sunshinekitty5/TwitchPlaysPokemon/archive/master/twitchplayspokemon.zip">this</a> and extract it anywhere, don't re-arrange or re-name the contents without changing the scripts, you will also need to update ircbot.py to connect to your account, or else it will NOT work.
 
 <h2>How-to run</h2>
 
@@ -25,9 +25,9 @@ Now you're good, download <a href="https://github.com/sunshinekitty5/TwitchPlays
 
 Open Visual Boy Advance and change your arrow key settings to use num-pad 8, 4, 6, 2 respectively with num-lock enabled, Z and X are A and B, Enter and Backspace are Start and Select.
 
-Open up two COMMAND PROMPTS and before running the programs type in chcp 65001
+Open up two COMMAND PROMPTS and before running the programs type in chcp 65001 into EACH
 
-First start the ircbot, verify that it echos "Connected" to the channel and can receive messages, then start the controller.py which will open VBA as well as focus it every 3 seconds when it needs to make a command.
+First start the ircbot, verify that it echoes "Connected" to the channel and can receive messages, then start the controller.py which will open VBA as well as focus it every 3 seconds when it needs to make a command.
 
 (To people who don't know command line, navigate to the directory your stuff is located in with cd Directory\Name then type in the name of the program, if you installed Python 3.3.4 correctly it will start the program)
 
